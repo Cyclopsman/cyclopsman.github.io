@@ -1,0 +1,379 @@
+/* ========================================
+   ELEVATOR PITCH PAGE STYLES
+   ======================================== */
+
+/* Pitch Header */
+.pitch-header {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f1624 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 2rem 4rem;
+}
+
+.pitch-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(255, 182, 163, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 50%);
+    animation: gradientShift 15s ease infinite;
+}
+
+.pitch-header .header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+.pitch-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pitch-header p {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+
+/* Main Pitch Section */
+.pitch-main {
+    padding: 6rem 2rem;
+    background: var(--white);
+}
+
+.pitch-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pitch-intro {
+    margin-bottom: 4rem;
+}
+
+.pitch-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--dark);
+    text-align: center;
+}
+
+.intro-highlight {
+    background: var(--light-gradient);
+    padding: 3rem;
+    border-radius: 20px;
+    border-left: 5px solid var(--coral);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.lead {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: var(--dark);
+    font-weight: 400;
+    margin: 0;
+}
+
+.pitch-body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.pitch-section {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.section-number {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(255, 140, 122, 0.3);
+}
+
+.section-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.section-content p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text-light);
+}
+
+/* Strengths Section */
+.strengths-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+}
+
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.strength-card {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.strength-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--primary-gradient);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.strength-card:hover::before {
+    transform: scaleX(1);
+}
+
+.strength-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.strength-number {
+    margin-bottom: 1.5rem;
+}
+
+.strength-number .number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.strength-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.strength-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* Looking For Section */
+.looking-for-section {
+    padding: 6rem 2rem;
+    background: var(--white);
+}
+
+.looking-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.looking-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+}
+
+.looking-intro {
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+}
+
+.opportunities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.opportunity-item {
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.opportunity-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.opportunity-item svg {
+    color: var(--coral);
+    margin-bottom: 1.5rem;
+}
+
+.opportunity-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.opportunity-item p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* Pitch CTA */
+.pitch-cta {
+    padding: 6rem 2rem;
+    background: var(--dark-gradient);
+    color: var(--white);
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 3rem;
+}
+
+.cta-content .btn {
+    margin: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-outline:hover {
+    background: var(--white);
+    color: var(--dark);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .strengths-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .opportunities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .pitch-header h1 {
+        font-size: 3rem;
+    }
+
+    .pitch-header p {
+        font-size: 1.3rem;
+    }
+
+    .pitch-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-number {
+        margin: 0 auto;
+    }
+
+    .section-content {
+        text-align: center;
+    }
+
+    .strengths-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pitch-intro h2,
+    .looking-content h2,
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pitch-header {
+        padding: 8rem 1rem 4rem;
+    }
+
+    .pitch-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .pitch-main,
+    .strengths-section,
+    .looking-for-section,
+    .pitch-cta {
+        padding: 4rem 1rem;
+    }
+
+    .intro-highlight {
+        padding: 2rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    .cta-content .btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0.5rem 0;
+    }
+}

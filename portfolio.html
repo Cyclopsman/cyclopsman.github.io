@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Jessica Botchwey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">JB</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="pitch.html">Elevator Pitch</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <div class="header-content">
+            <h1>My Portfolio</h1>
+            <p>A showcase of my projects, achievements, and professional growth</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Introduction -->
+    <section class="portfolio-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Building Excellence, One Project at a Time</h2>
+                <p>Throughout my academic journey at the University of Ghana and beyond, I've had the privilege of working on diverse projects that have shaped my skills in accounting, project management, and team collaboration. Here's a glimpse into my work and accomplishments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Categories -->
+    <section class="portfolio-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All Projects</button>
+                <button class="filter-btn" data-category="academic">Academic Projects</button>
+                <button class="filter-btn" data-category="leadership">Leadership & Teams</button>
+                <button class="filter-btn" data-category="analysis">Financial Analysis</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item" data-category="academic">
+                    <div class="item-image">
+                        <div class="image-overlay">
+                            <h3>Financial Statement Analysis</h3>
+                            <p>Academic Project</p>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-meta">
+                            <span class="category">Academic</span>
+                            <span class="date">2024</span>
+                        </div>
+                        <h3>Comprehensive Financial Statement Analysis</h3>
+                        <p>Conducted in-depth analysis of publicly traded companies, examining financial ratios, trends, and providing strategic recommendations for improvement.</p>
+                        <ul class="item-skills">
+                            <li>Financial Modeling</li>
+                            <li>Data Analysis</li>
+                            <li>Excel</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item" data-category="leadership">
+                    <div class="item-image">
+                        <div class="image-overlay">
+                            <h3>Team Project Leadership</h3>
+                            <p>Leadership Experience</p>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-meta">
+                            <span class="category">Leadership</span>
+                            <span class="date">2024</span>
+                        </div>
+                        <h3>Leading Cross-Functional Teams</h3>
+                        <p>Successfully coordinated multiple group projects, demonstrating strong project management skills and the ability to motivate diverse team members toward common goals.</p>
+                        <ul class="item-skills">
+                            <li>Project Management</li>
+                            <li>Team Leadership</li>
+                            <li>Communication</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item" data-category="analysis">
+                    <div class="item-image">
+                        <div class="image-overlay">
+                            <h3>Budget Planning & Forecasting</h3>
+                            <p>Financial Analysis</p>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-meta">
+                            <span class="category">Analysis</span>
+                            <span class="date">2024</span>
+                        </div>
+                        <h3>Strategic Budget Development</h3>
+                        <p>Developed comprehensive budget plans and financial forecasts using advanced Excel techniques and financial modeling principles.</p>
+                        <ul class="item-skills">
+                            <li>Budgeting</li>
+                            <li>Forecasting</li>
+                            <li>Excel Modeling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item" data-category="academic">
+                    <div class="item-image">
+                        <div class="image-overlay">
+                            <h3>Accounting Research Paper</h3>
+                            <p>Academic Achievement</p>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-meta">
+                            <span class="category">Academic</span>
+                            <span class="date">2023</span>
+                        </div>
+                        <h3>Contemporary Issues in Accounting</h3>
+                        <p>Researched and presented on emerging trends in international accounting standards and their impact on Ghanaian businesses.</p>
+                        <ul class="item-skills">
+                            <li>Research</li>
+                            <li>Analysis</li>
+                            <li>Presentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item" data-category="leadership">
+                    <div class="item-image">
+                        <div class="image-overlay">
+                            <h3>Professional Presentations</h3>
+                            <p>Communication Excellence</p>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-meta">
+                            <span class="category">Leadership</span>
+                            <span class="date">2024</span>
+                        </div>
+                        <h3>Effective Business Communication</h3>
+                        <p>Delivered multiple high-impact presentations, transforming complex financial data into clear, actionable insights for diverse audiences.</p>
+                        <ul class="item-skills">
+                            <li>Public Speaking</li>
+                            <li>PowerPoint</li>
+                            <li>Storytelling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item" data-category="analysis">
+                    <div class="item-image">
+                        <div class="image-overlay">
+                            <h3>Data Visualization Projects</h3>
+                            <p>Analytics & Reporting</p>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-meta">
+                            <span class="category">Analysis</span>
+                            <span class="date">2023</span>
+                        </div>
+                        <h3>Financial Data Visualization</h3>
+                        <p>Created compelling visual representations of financial data, making complex information accessible and actionable for stakeholders.</p>
+                        <ul class="item-skills">
+                            <li>Excel Charts</li>
+                            <li>Data Presentation</li>
+                            <li>Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio PDF Section -->
+    <section class="portfolio-pdf">
+        <div class="container">
+            <div class="pdf-card">
+                <div class="pdf-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <h3>Download My Complete Portfolio</h3>
+                <p>For a comprehensive overview of my projects, achievements, and professional experience, download my portfolio PDF.</p>
+                <a href="#" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Portfolio PDF
+                </a>
+                <p class="pdf-note">Note: You can add your portfolio PDF file to this website and link it here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎓</div>
+                    <h3>Academic Excellence</h3>
+                    <p>Consistently maintaining high academic standards while actively participating in extracurricular activities.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🤝</div>
+                    <h3>Team Collaboration</h3>
+                    <p>Recognized for outstanding teamwork and ability to bring diverse perspectives together.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">💡</div>
+                    <h3>Innovative Thinking</h3>
+                    <p>Applied creative problem-solving approaches to complex financial and organizational challenges.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">📊</div>
+                    <h3>Data Proficiency</h3>
+                    <p>Advanced skills in Excel, financial modeling, and data analysis for strategic decision-making.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Interested in Collaborating?</h2>
+            <p>I'm always open to new opportunities, projects, and meaningful connections. Let's create something amazing together!</p>
+            <div class="cta-buttons">
+                <a href="mailto:jessicabotchwey74@gmail.com" class="btn btn-primary">Get in Touch</a>
+                <a href="pitch.html" class="btn btn-secondary">View My Elevator Pitch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Jessica Botchwey. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
